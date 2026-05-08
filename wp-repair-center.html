@@ -67,25 +67,33 @@
       70% { box-shadow: 0 0 0 15px rgba(0,74,173, 0); }
       100% { box-shadow: 0 0 0 0 rgba(0,74,173, 0); }
     }
-         .footer-oll-now {
-    bottom: 0px;
-    color: #fff !important;
-    font-size: 22px !important;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 30px;
-    font-weight: normal;
-    line-height: 56px;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    text-align: center;
-    background-color: #008000;
-}
-.footer-oll-now a{
-	color: #fff;
-	font-weight:700;
-}
+             .footer-oll-now {
+      bottom: 0px;
+      width: 100%;
+      position: fixed;
+      z-index: 1000;
+      text-align: center;
+      background: linear-gradient(135deg, #10b981, #059669);
+      box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-oll-now a {
+      display: block;
+      color: #fff !important;
+      font-size: 22px;
+      font-weight: 800;
+      line-height: 65px;
+      text-decoration: none !important;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      animation: pulseBtn 2s infinite;
+    }
+
+    @keyframes pulseBtn {
+      0% { text-shadow: 0 0 5px rgba(255,255,255,0.4); transform: scale(1); }
+      50% { text-shadow: 0 0 15px rgba(255,255,255,0.9); transform: scale(1.05); }
+      100% { text-shadow: 0 0 5px rgba(255,255,255,0.4); transform: scale(1); }
+    }
   </style>
 </head>
 <body>
